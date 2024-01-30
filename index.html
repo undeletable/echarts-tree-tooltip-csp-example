@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ECharts tree with CSP</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self';" />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <div class="page-container">
+      <select id="renderer-select">
+        <option value="">Please choose chart renderer</option>
+        <option value="canvas">Canvas</option>
+        <option value="svg">SVG</option>
+      </select>
+      <div id="chart-container"></div>
+    </div>
+    <script src="./echarts.5.5.0.rc.1.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
